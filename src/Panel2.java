@@ -15,7 +15,7 @@ public class Panel2 extends JPanel {
         panel.setGraphicsPanel(gpp);
 
 
-        setBackground(Color.lightGray);
+        setBackground(Color.decode("#104E8B"));
         setLayout(null);
 
         panel.setBounds(screenWidth-smallPanelWidth,0,smallPanelWidth,smallPanelHeight);
