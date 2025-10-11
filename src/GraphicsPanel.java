@@ -28,7 +28,7 @@ public class GraphicsPanel extends JPanel {
         Graphics2D g2 = (Graphics2D) g;
 
         g2.setStroke(new BasicStroke(2));
-        g2.setColor(Color.black);
+        g2.setColor(Color.decode("#D9E6FF"));
         g2.drawLine(startX,startY,startX+lineWidth,startY);
         g2.drawLine(startX,startY,startX,startY-lineHeight);
 
@@ -70,16 +70,16 @@ public class GraphicsPanel extends JPanel {
             p.y1_2 = temp;
         }
 
-        Color color1 = Color.decode("#FFD700");
+        Color color1 = Color.decode("#FFC857");
         g2.setColor(color1);
 
-        g2.drawRect(startX+gapX*p.x1_1,(startY-gapY*p.y1_1)-((gapY*p.y2_1)-(p.y1_1*gapY)),
+        if(p.isButton1Pressed)g2.drawRect(startX+gapX*p.x1_1,(startY-gapY*p.y1_1)-((gapY*p.y2_1)-(p.y1_1*gapY)),
                 (gapX*p.x2_1)-(p.x1_1*gapX),(gapY*p.y2_1)-(p.y1_1*gapY));
 
-        Color color2 = Color.decode("#1E90FF");
+        Color color2 = Color.decode("#5AB9EA");
         g2.setColor(color2);
 
-        g2.drawRect(startX+gapX*p.x1_2,(startY-gapY*p.y1_2)-((gapY*p.y2_2)-(p.y1_2*gapY)),
+        if(p.isButton2Pressed)g2.drawRect(startX+gapX*p.x1_2,(startY-gapY*p.y1_2)-((gapY*p.y2_2)-(p.y1_2*gapY)),
                 (gapX*p.x2_2)-(p.x1_2*gapX),(gapY*p.y2_2)-(p.y1_2*gapY));
     }
 }

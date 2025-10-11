@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 public class Panel extends JPanel {
 
@@ -30,6 +32,9 @@ public class Panel extends JPanel {
     public int x2_2;
     public int y2_2;
 
+    public boolean isButton1Pressed = false;
+    public boolean isButton2Pressed = false;
+
     GraphicsPanel gpp;
 
     public void setGraphicsPanel(GraphicsPanel gpp)
@@ -39,40 +44,44 @@ public class Panel extends JPanel {
 
     public Panel()
     {
-        setBackground(Color.darkGray);
+        setBackground(Color.decode("#1A2E4F"));
 
         //Label settings
 
-        label1.setBackground(Color.white);
-        label1.setForeground(Color.GRAY);
-        label1.setFont(new Font("Papyrus",Font.BOLD,20));
+        label1.setForeground(Color.decode("#E8ECF2"));
+        label1.setFont(new Font("Inter",Font.BOLD,20));
 
-        label2.setBackground(Color.white);
-        label2.setForeground(Color.GRAY);
-        label2.setFont(new Font("Papyrus",Font.BOLD,20));
+        label2.setForeground(Color.decode("#E8ECF2"));
+        label2.setFont(new Font("Roboto Mono",Font.BOLD,20));
 
         //Button settings
 
-        button1.setBackground(Color.gray);
-        button2.setBackground(Color.gray);
+        button1.setBackground(Color.decode("#2E4C76"));
+        button2.setBackground(Color.decode("#2E4C76"));
 
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String input1 = text1.getText();
-                x1_1 = Integer.parseInt(input1);
+                try{
+                    String input1 = text1.getText();
+                    x1_1 = Integer.parseInt(input1);
 
-                String input3 = text3.getText();
-                y1_1 = Integer.parseInt(input3);
+                    String input3 = text3.getText();
+                    y1_1 = Integer.parseInt(input3);
 
-                String input5 = text5.getText();
-                x2_1 = Integer.parseInt(input5);
+                    String input5 = text5.getText();
+                    x2_1 = Integer.parseInt(input5);
 
-                String input7 = text7.getText();
-                y2_1 = Integer.parseInt(input7);
+                    String input7 = text7.getText();
+                    y2_1 = Integer.parseInt(input7);
 
-                gpp.repaint();
+                    isButton1Pressed = true;
+
+                    gpp.repaint();
+                }catch(NumberFormatException ee){
+                    System.out.println("Please enter a number");
+                }
 
             }
         });
@@ -81,33 +90,39 @@ public class Panel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String input2 = text2.getText();
-                x1_2 = Integer.parseInt(input2);
+                try{
+                    String input2 = text2.getText();
+                    x1_2 = Integer.parseInt(input2);
 
-                String input4 = text4.getText();
-                y1_2 = Integer.parseInt(input4);
+                    String input4 = text4.getText();
+                    y1_2 = Integer.parseInt(input4);
 
-                String input6 = text6.getText();
-                x2_2 = Integer.parseInt(input6);
+                    String input6 = text6.getText();
+                    x2_2 = Integer.parseInt(input6);
 
-                String input8 = text8.getText();
-                y2_2 = Integer.parseInt(input8);
-                System.out.println(x1_1+""+y1_2);
+                    String input8 = text8.getText();
+                    y2_2 = Integer.parseInt(input8);
+                    System.out.println(x1_1+""+y1_2);
 
-                gpp.repaint();
+                    isButton2Pressed = true;
+
+                    gpp.repaint();
+                }catch(NumberFormatException ee){
+                    System.out.println("Please enter a number");
+                }
             }
         });
 
         //Text settings
 
-        text1.setBackground(Color.lightGray);
-        text2.setBackground(Color.lightGray);
-        text3.setBackground(Color.lightGray);
-        text4.setBackground(Color.lightGray);
-        text5.setBackground(Color.lightGray);
-        text6.setBackground(Color.lightGray);
-        text7.setBackground(Color.lightGray);
-        text8.setBackground(Color.lightGray);
+        text1.setBackground(Color.decode("#223A63"));
+        text2.setBackground(Color.decode("#223A63"));
+        text3.setBackground(Color.decode("#223A63"));
+        text4.setBackground(Color.decode("#223A63"));
+        text5.setBackground(Color.decode("#223A63"));
+        text6.setBackground(Color.decode("#223A63"));
+        text7.setBackground(Color.decode("#223A63"));
+        text8.setBackground(Color.decode("#223A63"));
 
         /////////////////////////////////////////////////////////////
 
