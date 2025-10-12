@@ -102,7 +102,6 @@ public class Panel extends JPanel {
 
                     String input8 = text8.getText();
                     y2_2 = Integer.parseInt(input8);
-                    System.out.println(x1_1+""+y1_2);
 
                     isButton2Pressed = true;
 
@@ -123,6 +122,15 @@ public class Panel extends JPanel {
         text6.setBackground(Color.decode("#223A63"));
         text7.setBackground(Color.decode("#223A63"));
         text8.setBackground(Color.decode("#223A63"));
+
+        text1.setForeground(Color.white);
+        text2.setForeground(Color.white);
+        text3.setForeground(Color.white);
+        text4.setForeground(Color.white);
+        text5.setForeground(Color.white);
+        text6.setForeground(Color.white);
+        text7.setForeground(Color.white);
+        text8.setForeground(Color.white);
 
         /////////////////////////////////////////////////////////////
 

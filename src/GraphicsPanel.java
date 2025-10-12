@@ -17,8 +17,8 @@ public class GraphicsPanel extends JPanel {
     final int startY = 600;
     final int lineWidth = 500;
     final int lineHeight = 500;
-    final int howManyX = 10;
-    final int howManyY = 10;
+    final int howManyX = 20;
+    final int howManyY = 20;
     final int gapX = lineWidth/howManyX;
     final int gapY = lineHeight/howManyY;
 
