@@ -1,3 +1,5 @@
+You can download the app from release section on the right.
+
 This application visualizes the Leetcode Rectangle Overlap problem.
 
 Currently, the coordinate plane is 20x20.
