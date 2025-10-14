@@ -57,7 +57,33 @@ public class Panel extends JPanel {
         //Button settings
 
         button1.setBackground(Color.decode("#2E4C76"));
+        button1.setFocusPainted(false);
+        button1.setBorderPainted(false);
+
         button2.setBackground(Color.decode("#2E4C76"));
+        button2.setFocusPainted(false);
+        button2.setBorderPainted(false);
+
+        button1.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {}
+
+            @Override
+            public void mousePressed(MouseEvent e) {}
+
+            @Override
+            public void mouseReleased(MouseEvent e) {}
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                button1.setBackground(Color.decode("#4A6FA8"));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                button1.setBackground(Color.decode("#2E4C76"));
+            }
+        });
 
         button1.addActionListener(new ActionListener() {
             @Override
@@ -83,6 +109,27 @@ public class Panel extends JPanel {
                     System.out.println("Please enter a number");
                 }
 
+            }
+        });
+
+        button2.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {}
+
+            @Override
+            public void mousePressed(MouseEvent e) {}
+
+            @Override
+            public void mouseReleased(MouseEvent e) {}
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                button2.setBackground(Color.decode("#4A6FA8"));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                button2.setBackground(Color.decode("#2E4C76"));
             }
         });
 
