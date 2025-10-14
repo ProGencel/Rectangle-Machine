@@ -44,6 +44,7 @@ public class Panel extends JPanel {
 
     public Panel()
     {
+        setVisible(true);
         setBackground(Color.decode("#1A2E4F"));
 
         //Label settings

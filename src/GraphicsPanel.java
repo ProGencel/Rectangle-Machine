@@ -104,7 +104,15 @@ public class GraphicsPanel extends JPanel {
 
         for(int i = 1;i<=howManyX;i++)
         {
+            JLabel[] txt = new JLabel[howManyX];
             g2.drawLine(startX+i*gapX,startY+5,startX+i*gapX,startY-5);
+            if(i%1 == 0)
+            {
+                txt[i-1] = new JLabel(String.valueOf(i));
+                txt[i-1].setForeground(Color.black);
+                txt[i-1].setBounds(startX+,100,100,100);
+                add(txt[i-1]);
+            }
         }
 
         for(int i = 1;i<=howManyY;i++)
