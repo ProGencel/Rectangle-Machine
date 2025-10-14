@@ -48,10 +48,10 @@ public class Panel extends JPanel {
 
         //Label settings
 
-        label1.setForeground(Color.decode("#E8ECF2"));
+        label1.setForeground(Color.decode("#FFC857"));
         label1.setFont(new Font("Inter",Font.BOLD,20));
 
-        label2.setForeground(Color.decode("#E8ECF2"));
+        label2.setForeground(Color.decode("#5AB9EA"));
         label2.setFont(new Font("Roboto Mono",Font.BOLD,20));
 
         //Button settings
@@ -59,10 +59,12 @@ public class Panel extends JPanel {
         button1.setBackground(Color.decode("#2E4C76"));
         button1.setFocusPainted(false);
         button1.setBorderPainted(false);
+        button1.setForeground(Color.decode("#D9E6FF"));
 
         button2.setBackground(Color.decode("#2E4C76"));
         button2.setFocusPainted(false);
         button2.setBorderPainted(false);
+        button2.setForeground(Color.decode("#D9E6FF"));
 
         button1.addMouseListener(new MouseListener() {
             @Override
@@ -169,6 +171,15 @@ public class Panel extends JPanel {
         text6.setBackground(Color.decode("#223A63"));
         text7.setBackground(Color.decode("#223A63"));
         text8.setBackground(Color.decode("#223A63"));
+
+        text1.setCaretColor(Color.white);
+        text2.setCaretColor(Color.white);
+        text3.setCaretColor(Color.white);
+        text4.setCaretColor(Color.white);
+        text5.setCaretColor(Color.white);
+        text6.setCaretColor(Color.white);
+        text7.setCaretColor(Color.white);
+        text8.setCaretColor(Color.white);
 
         text1.setForeground(Color.white);
         text2.setForeground(Color.white);

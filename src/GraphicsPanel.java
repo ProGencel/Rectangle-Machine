@@ -13,34 +13,24 @@ public class GraphicsPanel extends JPanel {
         setOpaque(false);
     }
 
-    final int howManyX = 20;
-    final int howManyY = 20;
+    int width1 = 0;
+    int width2 = 0;
+    int height1 = 0;
+    int height2 = 0;
+
+    int howManyX = 20;
+    int howManyY = 20;
     final int startX = 200;
     final int startY = 600;
-    final int lineWidth = howManyX*4;
-    final int lineHeight = 500;
-    final int gapX = lineWidth/howManyX;
-    final int gapY = lineHeight/howManyY;
+    int lineWidth = 500;
+    int lineHeight = 500;
+    int gapX = lineWidth/howManyX;
+    int gapY = lineHeight/howManyY;
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
-
-        g2.setStroke(new BasicStroke(2));
-        g2.setColor(Color.decode("#D9E6FF"));
-        g2.drawLine(startX,startY,startX+lineWidth,startY);
-        g2.drawLine(startX,startY,startX,startY-lineHeight);
-
-        for(int i = 1;i<=howManyX;i++)
-        {
-            g2.drawLine(startX+i*gapX,startY+5,startX+i*gapX,startY-5);
-        }
-
-        for(int i = 1;i<=howManyY;i++)
-        {
-            g2.drawLine(startX+5,startY-i*gapY,startX-5,startY-i*gapY);
-        }
 
         g2.setStroke(new BasicStroke(3));
         g2.setColor(Color.BLACK);
@@ -69,6 +59,61 @@ public class GraphicsPanel extends JPanel {
             p.y2_2 = p.y1_2;
             p.y1_2 = temp;
         }
+
+        width1 = p.x2_1 - p.x1_1;
+        width2 = p.x2_2 - p.x1_2;
+
+        height1 = p.y2_1 - p.y1_1;
+        height2 = p.y2_2 - p.y1_2;
+
+        int mainWidth = Math.max(width1, width2);
+        int mainHeight = Math.max(height1,height2);
+
+        int mamaScale = Math.max(mainWidth,mainHeight);
+
+        lineWidth = 500;
+        lineHeight = 500;
+
+        if(mamaScale == 0)
+        {
+            mamaScale = 20;
+        }
+
+        mamaScale += Math.max(Math.max(p.x1_2,p.x1_1),Math.max(p.y1_1,p.y1_2));
+
+        for(int i = lineWidth-mamaScale/2;i<lineWidth+mamaScale/2;i++)
+        {
+            if(i%mamaScale == 0)
+            {
+                lineWidth = i;
+                lineHeight = i;
+                break;
+            }
+        }
+
+
+        howManyX = mamaScale;
+        gapX = lineWidth/howManyX;
+        howManyY = mamaScale;
+        gapY = lineWidth/howManyY;
+
+        g2.setStroke(new BasicStroke(0.1f));
+        g2.setColor(Color.decode("#D9E6FF"));
+        g2.drawLine(startX,startY,startX+lineWidth,startY);
+        g2.drawLine(startX,startY,startX,startY-lineHeight);
+
+        for(int i = 1;i<=howManyX;i++)
+        {
+            g2.drawLine(startX+i*gapX,startY+5,startX+i*gapX,startY-5);
+        }
+
+        for(int i = 1;i<=howManyY;i++)
+        {
+            g2.drawLine(startX+5,startY-i*gapY,startX-5,startY-i*gapY);
+        }
+
+        howManyX = lineWidth/mamaScale;
+        howManyY = lineHeight/mamaScale;
 
         Color color1 = Color.decode("#FFC857");
         g2.setColor(color1);

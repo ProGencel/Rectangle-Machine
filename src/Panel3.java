@@ -15,7 +15,7 @@ public class Panel3 extends JPanel {
     {
         this.panel2 = panel2;
         setBackground(Color.black);
-        setBounds(panel2.screenWidth - panel2.smallPanelWidth - 25,70,
+        setBounds(panel2.screenWidth - panel2.smallPanelWidth - 25,72,
                 30, panel2.smallPanelHeight-60);
 
         setLayout(new BoxLayout(this,BoxLayout.Y_AXIS));
