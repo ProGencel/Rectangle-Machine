@@ -5,7 +5,7 @@ public class GraphicsPanel extends JPanel {
 
     Panel p;
 
-    public GraphicsPanel(Panel2 p2,Panel p) //If you will use Panel2 out of constructor then create a reference for that
+    public GraphicsPanel(Panel2 p2,Panel p) //If you use Panel2 out of constructor then create a reference for that
     {
         this.p = p;
         setLayout(null);
@@ -13,12 +13,12 @@ public class GraphicsPanel extends JPanel {
         setOpaque(false);
     }
 
-    final int startX = 200;
-    final int startY = 600;
-    final int lineWidth = 500;
-    final int lineHeight = 500;
     final int howManyX = 20;
     final int howManyY = 20;
+    final int startX = 200;
+    final int startY = 600;
+    final int lineWidth = howManyX*4;
+    final int lineHeight = 500;
     final int gapX = lineWidth/howManyX;
     final int gapY = lineHeight/howManyY;
 
