@@ -1,0 +1,93 @@
+[33mcommit 7d7bf4908e8ee47c7afcb69864e2f203be500d08[m
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Sat Oct 11 18:02:51 2025 +0300
+
+    Ilk commit
+
+[33mcommit ac2acaf9a327373d0685c58490063353a68b844f[m
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Sat Oct 11 18:04:39 2025 +0300
+
+    Initial commit
+
+[33mcommit 5ccffe60ff9d4fe425e9d42bb314048c5913b63d[m
+Merge: 7d7bf49 ac2acaf
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Sat Oct 11 18:15:21 2025 +0300
+
+    Resolved merge commit in .gitignore
+
+[33mcommit bff8e0c4eebdff756cdfc61fb4d1505c077589b3[m
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Sat Oct 11 18:45:39 2025 +0300
+
+    Color changes
+
+[33mcommit fea9128bb1bc7899718bda1a78c8b8071f982f7e[m
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Sat Oct 11 19:12:31 2025 +0300
+
+    Color changes again
+
+[33mcommit d9287bb8732e19e51660675a5a7c4cb3af1451dc[m
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Sun Oct 12 12:30:18 2025 +0300
+
+    Little changes
+
+[33mcommit 880ec623e09b23d82e06e5418e0a3b157e798734[m
+Author: Ahmet Efe Gençel <78404991+ProGencel@users.noreply.github.com>
+Date:   Mon Oct 13 21:22:40 2025 +0300
+
+    README.md
+
+[33mcommit c1f12a0732580f80d1e34472bacc31bc55ac794d[m
+Author: Ahmet Efe Gençel <78404991+ProGencel@users.noreply.github.com>
+Date:   Mon Oct 13 21:24:43 2025 +0300
+
+    Update README.md
+
+[33mcommit 19108c9008a05586f3700fd075892a5f05ce7847[m
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Tue Oct 14 14:48:59 2025 +0300
+
+    Button changes
+
+[33mcommit fa94bb64e3b95802957a7223ae224ae7c44a0224[m
+Merge: 19108c9 c1f12a0
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Tue Oct 14 14:51:07 2025 +0300
+
+    Merge branch 'main' of https://github.com/ProGencel/Rectangle-Machine
+    
+    Added packages for mac, win and standart .jar file
+
+[33mcommit 9af036d4f8da9717fb4c2b8079837a4635f317ca[m
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Tue Oct 14 17:01:26 2025 +0300
+
+    Starting add little panel for x1y1x2y2
+
+[33mcommit f5900b423b71ca85007c86c37d91ed719e888144[m
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Tue Oct 14 18:09:38 2025 +0300
+
+    Added texts and working on adjustable coordinate system
+
+[33mcommit 654cde7a687b1262f60029eff4b3d7602592968d[m
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Tue Oct 14 23:04:41 2025 +0300
+
+    Coordinate system now change with square size
+
+[33mcommit bf6ef50123329c79b383989b52461d6019100544[m
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Tue Oct 14 23:55:13 2025 +0300
+
+    Number trys
+
+[33mcommit c1dd6581caf398feee4b99ace1bbd4ced525dceb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Ahmet Efe Gençel <bloggeromeo@gmail.com>
+Date:   Wed Oct 15 09:57:42 2025 +0300
+
+    Adding numbers but not perfect

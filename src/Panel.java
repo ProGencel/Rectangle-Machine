@@ -95,15 +95,31 @@ public class Panel extends JPanel {
                 try{
                     String input1 = text1.getText();
                     x1_1 = Integer.parseInt(input1);
+                    if(x1_1 > 580)
+                    {
+                        x1_1 = 580;
+                    }
 
                     String input3 = text3.getText();
                     y1_1 = Integer.parseInt(input3);
+                    if(y1_1 > 580)
+                    {
+                        y1_1 = 580;
+                    }
 
                     String input5 = text5.getText();
                     x2_1 = Integer.parseInt(input5);
+                    if(x2_1 > 580)
+                    {
+                        x2_1 = 580;
+                    }
 
                     String input7 = text7.getText();
                     y2_1 = Integer.parseInt(input7);
+                    if(y2_1 > 580)
+                    {
+                        y2_1 = 580;
+                    }
 
                     isButton1Pressed = true;
 
@@ -143,15 +159,31 @@ public class Panel extends JPanel {
                 try{
                     String input2 = text2.getText();
                     x1_2 = Integer.parseInt(input2);
+                    if(x1_2 > 580)
+                    {
+                        x1_2 = 580;
+                    }
 
                     String input4 = text4.getText();
                     y1_2 = Integer.parseInt(input4);
+                    if(y1_2 > 580)
+                    {
+                        y1_2 = 580;
+                    }
 
                     String input6 = text6.getText();
                     x2_2 = Integer.parseInt(input6);
+                    if(x2_2 > 580)
+                    {
+                        x2_2 = 580;
+                    }
 
                     String input8 = text8.getText();
                     y2_2 = Integer.parseInt(input8);
+                    if(y2_2 > 580)
+                    {
+                        y2_2 = 580;
+                    }
 
                     isButton2Pressed = true;
 

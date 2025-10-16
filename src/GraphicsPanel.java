@@ -102,19 +102,44 @@ public class GraphicsPanel extends JPanel {
         g2.drawLine(startX,startY,startX+lineWidth,startY);
         g2.drawLine(startX,startY,startX,startY-lineHeight);
 
+        int numGapX = 10;
+        if(howManyX>300)
+        {
+            numGapX = 50;
+        }
+        else if(howManyX>150)
+        {
+            numGapX = 20;
+        }
+
         for(int i = 1;i<=howManyX;i++)
         {
             g2.drawLine(startX+i*gapX,startY+5,startX+i*gapX,startY-5);
-            if(i%10 == 0)
+            if(i%numGapX == 0)
             {
                 g2.drawString(String.valueOf(i),startX+i*gapX-g2.getFontMetrics().stringWidth(String.valueOf(i))/2,
                         startY+15);
             }
         }
 
+        int numGapY = 10;
+        if(howManyY>300)
+        {
+            numGapY = 50;
+        }
+        else if(howManyY>150)
+        {
+            numGapY = 20;
+        }
+
         for(int i = 1;i<=howManyY;i++)
         {
             g2.drawLine(startX+5,startY-i*gapY,startX-5,startY-i*gapY);
+            if(i%numGapY == 0)
+            {
+                g2.drawString(String.valueOf(i),startX-15,
+                        startY-i*gapY+g2.getFontMetrics().stringWidth(String.valueOf(i))/2);
+            }
         }
 
         howManyX = lineWidth/mamaScale;
