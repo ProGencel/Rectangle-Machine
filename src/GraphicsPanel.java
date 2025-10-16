@@ -137,8 +137,8 @@ public class GraphicsPanel extends JPanel {
             g2.drawLine(startX+5,startY-i*gapY,startX-5,startY-i*gapY);
             if(i%numGapY == 0)
             {
-                g2.drawString(String.valueOf(i),startX-15,
-                        startY-i*gapY+g2.getFontMetrics().stringWidth(String.valueOf(i))/2);
+                g2.drawString(String.valueOf(i),startX-20,
+                        startY-i*gapY+g2.getFontMetrics().stringWidth(String.valueOf(i))/2-1);
             }
         }
 
